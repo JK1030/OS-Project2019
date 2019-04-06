@@ -1,13 +1,13 @@
 public class PCB
 {
-   String State;
+   String Status;
    int counter;
    int jobID;
    int priority;
    int startingAddress;
    
   
-   enum State
+   enum Status
    {
       RUNNING, READY, WAITING
    }
@@ -41,9 +41,9 @@ public class PCB
    }
 
 
-   public PCB(String State, int counter, int jobID, int priority, int startingAddress )
+   public PCB(String Status, int counter, int jobID, int priority, int startingAddress )
    {
-      this.State = State;
+      this.Status = Status;
       this.counter = counter;
       this.jobID = jobID;
       this.priority = priority;
